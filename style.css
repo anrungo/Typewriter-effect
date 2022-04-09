@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  background: #333 url('https://i.ibb.co/6gXzH9C/showcase.jpg') no-repeat center center / cover;
+  color: #ccc;
+  overflow:hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+h1, h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid rgb(25, 123, 145);
+}
+
+@media(min-width: 1200px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media(max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.intro{
+    display: flex;
+    color: white;
+    height: 50vh;
+}
+
+.typing{
+    position: relative;
+    margin-left: 10px;
+}
+
+.typing::after{
+    content: "";
+    position: absolute;
+    right: -5px;
+    width: 3px;
+    height: 20%;
+    border-right: 2px solid rgb(18, 131, 144);
+    animation: blink 0.9s infinite ease;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
